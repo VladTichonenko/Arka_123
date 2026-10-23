@@ -1,0 +1,57 @@
+[
+  {
+    "class": "intro-hero",
+    "height": 740,
+    "top": 0
+  },
+  {
+    "class": "intro-about",
+    "height": 681,
+    "top": 740
+  },
+  {
+    "class": "space-section",
+    "height": 669,
+    "top": 1421
+  },
+  {
+    "class": "showcase-scroll",
+    "height": 1980,
+    "top": 2089
+  },
+  {
+    "class": "gallery-section",
+    "height": 1061,
+    "top": 4069
+  },
+  {
+    "class": "services-section",
+    "height": 1486,
+    "top": 5130
+  },
+  {
+    "class": "character-section",
+    "height": 682,
+    "top": 6616
+  },
+  {
+    "class": "reviews-section",
+    "height": 760,
+    "top": 7298
+  },
+  {
+    "class": "location-strip",
+    "height": 95,
+    "top": 8058
+  },
+  {
+    "class": "contact-section",
+    "height": 725,
+    "top": 8153
+  },
+  {
+    "class": "site-footer",
+    "height": 567,
+    "top": 8878
+  }
+]

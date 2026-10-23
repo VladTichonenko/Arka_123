@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-23",
+  "scope": "Chrome, desktop 1470×745 and mobile viewport 390×844; local current implementation",
+  "checks": {
+    "lint": "passed",
+    "build": "passed, warning: three.js chunk >500kB"
+  },
+  "steps": [
+    {
+      "number": 1,
+      "step": "Первый экран",
+      "finding": "Хорошая визуальная иерархия; заголовок слишком общий для аренды. Основная кнопка ведёт к форматам, а не к запросу даты.",
+      "screenshot": "01-desktop-hero.jpg"
+    },
+    {
+      "number": 2,
+      "step": "Арина: начало сцены",
+      "finding": "Фирменный персонаж встроен в интерьер. Часть текста мелкая; тёмный большой заголовок на неоднородном фоне требует проверки контраста.",
+      "screenshot": "02-arina-orbit.jpg"
+    },
+    {
+      "number": 3,
+      "step": "Арина: прокрутка",
+      "finding": "При прокрутке меняются ракурс и глава. Рассказ повторяет общие тезисы вместо новых фактов о зале. Полный круг 360° и геометрическая точность отдельно не измерялись.",
+      "screenshot": "03-orbit-scroll.jpg"
+    },
+    {
+      "number": 4,
+      "step": "Локация и рейтинг",
+      "finding": "Street View загружается. Рейтинг демонстрационный с пометкой; текстовых отзывов из ТЗ нет.",
+      "screenshot": "04-rating-map.jpg"
+    },
+    {
+      "number": 5,
+      "step": "Пять форматов",
+      "finding": "Пять согласованных карточек есть. На десктопе плавающий чат перекрывает область стрелок.",
+      "screenshot": "05-formats.jpg"
+    },
+    {
+      "number": 6,
+      "step": "Концептуальный план",
+      "finding": "План уже есть и честно помечен как ИИ-схема. Он не заменяет обмерный план с колоннами, размерами, зонами и вариантами рассадки.",
+      "screenshot": "06-advantages-plan.jpg"
+    },
+    {
+      "number": 7,
+      "step": "Тарифы",
+      "finding": "Три варианта разовой аренды с демонстрационными ценами. Нет конкретного состава аренды и дополнительных расходов. Минимум два часа указан.",
+      "screenshot": "07-pricing.jpg"
+    },
+    {
+      "number": 8,
+      "step": "Заявка",
+      "finding": "Форма явно сообщает, что отправка не подключена. Реального контактного телефона или электронной почты в футере нет.",
+      "screenshot": "08-inquiry.jpg"
+    },
+    {
+      "number": 9,
+      "step": "Обзор интерьера",
+      "finding": "Панорама работает и имеет предупреждение об ИИ-реконструкции. Это обзор 360° из одной точки; название 3D-тур завышает ожидание свободного перемещения.",
+      "screenshot": "09-interior-tour.jpg"
+    },
+    {
+      "number": 10,
+      "step": "Галерея",
+      "finding": "Открытие, переход к следующему фото и закрытие Escape проверены. В галерее шесть фотографий.",
+      "screenshot": "10-gallery.jpg"
+    },
+    {
+      "number": 11,
+      "step": "Телефон: первый экран",
+      "finding": "390×844: компоновка сохраняется; scrollWidth=innerWidth=390, переполнения нет. Мобильное меню открывается и ведёт к форматам.",
+      "screenshot": "11-mobile-hero.jpg"
+    },
+    {
+      "number": 12,
+      "step": "Телефон: форматы",
+      "finding": "Переход кнопкой к следующему формату проверен. Чат занимает нижнюю область управления. Жест на физическом телефоне не проверялся.",
+      "screenshot": "12-mobile-formats.jpg"
+    },
+    {
+      "number": 13,
+      "step": "Телефон: форма",
+      "finding": "Чат частично перекрывает кнопку отправки и поясняющий текст. Отправка не подключена.",
+      "screenshot": "13-mobile-inquiry.jpg"
+    }
+  ],
+  "limits": [
+    "No real booking delivery or live operator verified",
+    "No Lighthouse/network throttling/full WCAG audit",
+    "No physical mobile device test",
+    "No complete 360-degree camera trajectory or dimensional accuracy verification"
+  ],
+  "overall_score": 7,
+  "source": "https://docs.google.com/document/d/1hQdub1ngIcIsy4fcKDSN-V59NcwpJjLQV7XLlUCwE8Q/edit?tab=t.0"
+}

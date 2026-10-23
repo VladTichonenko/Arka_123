@@ -1,0 +1,9 @@
+Use case: stylized-concept.
+Asset type: square website illustration for ARKA 123 seminar format card; displayed about 320 x 235 CSS pixels.
+Primary request: create a premium high quality friendly 3D studio editorial illustration. A cream miniature presentation easel with abstract simple sage and charcoal geometric shapes on its board (absolutely no writing), two small rounded chairs in charcoal and sage, a floating warm terracotta speech bubble and a small ivory book, all forming one cohesive composition with a curved ivory architectural arch behind.
+Style: rounded tactile matte ceramic and satin plastic, friendly Yandex Go-like 3D product art inspired only by the attached visual reference's illustration styling. Original subject and composition.
+Backdrop: plain seamless very light warm gray #f3f3ef.
+Composition: square canvas, eye-level three-quarter front view, one centered coherent object group within the middle 75 percent, ample clear margins. Beautiful layered dimensional objects, clean silhouettes, polished professional visual quality.
+Lighting: soft upper-left studio light, delicate ambient contact shadows.
+Colors: ivory, warm cream, muted sage, charcoal and one warm terracotta accent.
+Constraints: no text, letters, numbers, logos, people, UI, collage, card frame or watermark.

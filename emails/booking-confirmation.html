@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ваша заявка в АРКУ 123</title></head>
+<body style="margin:0;padding:0;background:#f2f3ec;color:#18251e;font-family:Arial,Helvetica,sans-serif;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">{{name}}, ваша заявка на {{duration}} с {{start_date}} получена. До встречи в АРКЕ 123!</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f2f3ec;"><tr><td align="center" style="padding:32px 12px;">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="width:100%;max-width:600px;">
+<tr><td style="padding:0 8px 20px;font-size:24px;font-weight:800;letter-spacing:-1px;">АРКА <span style="color:#71823e;">123</span><span style="display:block;margin-top:5px;font-size:10px;font-weight:400;letter-spacing:2px;color:#737e70;">ПРОСТРАНСТВО ДЛЯ ВАШИХ ИДЕЙ</span></td></tr>
+<tr><td style="padding:34px 32px 32px;background:#e6f17e;border-radius:24px 24px 0 0;">
+<div style="font-size:11px;font-weight:700;letter-spacing:2px;">ЗАЯВКА ПОЛУЧЕНА &nbsp; ✓</div>
+<h1 style="margin:22px 0 16px;font-size:38px;line-height:1.08;letter-spacing:-1.8px;font-weight:700;">Ваше событие.<br>В&nbsp;АРКЕ&nbsp;123.</h1>
+<p style="margin:0;font-size:16px;line-height:1.6;">{{name}}, спасибо за вашу заявку!<br>Вы выбрали АРКУ 123 на <strong>{{duration}}</strong>.</p>
+</td></tr>
+<tr><td style="padding:28px 32px 32px;background:#fff;border-radius:0 0 24px 24px;">
+<p style="margin:0 0 24px;font-size:15px;line-height:1.7;">Мы получили ваш запрос на бронирование. Ниже — детали, которые вы указали. Сохраняйте это письмо: всё важное уже под рукой.</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e5e8df;border-radius:16px;">
+<tr><td style="padding:18px 20px 5px;font-size:10px;letter-spacing:1.4px;color:#75806f;">ВАША ВСТРЕЧА</td></tr>
+<tr><td style="padding:10px 20px 16px;border-bottom:1px solid #e9ece4;"><span style="display:block;font-size:12px;color:#75806f;margin-bottom:6px;">Дата начала</span><strong style="font-size:20px;letter-spacing:-.5px;">{{start_date}}</strong></td></tr>
+<tr><td style="padding:16px 20px;border-bottom:1px solid #e9ece4;"><span style="display:block;font-size:12px;color:#75806f;margin-bottom:6px;">Продолжительность</span><strong style="font-size:20px;letter-spacing:-.5px;">{{duration}}</strong></td></tr>
+<tr><td style="padding:16px 20px;"><span style="display:block;font-size:12px;color:#75806f;margin-bottom:6px;">Место встречи</span><strong style="font-size:15px;line-height:1.6;">Минск, Петра Мстиславца, 10</strong><span style="display:block;font-size:12px;line-height:1.6;color:#75806f;">Напротив Национальной библиотеки</span></td></tr>
+</table>
+{{#comment}}<div style="margin-top:22px;padding:18px 20px;background:#f6f7f1;border-radius:16px;"><div style="font-size:10px;letter-spacing:1.3px;color:#75806f;margin-bottom:9px;">О ВАШЕМ СОБЫТИИ</div><p style="margin:0;font-size:14px;line-height:1.7;white-space:pre-wrap;overflow-wrap:anywhere;">{{comment}}</p></div>{{/comment}}
+<p style="margin:22px 0 0;color:#75806f;font-size:12px;line-height:1.7;">Это подтверждение получения заявки. Дату, время и условия аренды согласуем отдельно. До согласования заявка не закрепляет зал за вами.</p>
+<h2 style="margin:28px 0 10px;font-size:27px;line-height:1.15;letter-spacing:-1px;">Будем ждать вас!</h2>
+<p style="margin:0;font-size:14px;line-height:1.7;color:#75806f;">С теплом,<br><strong style="color:#18251e;">команда АРКИ 123</strong></p>
+</td></tr>
+<tr><td align="center" style="padding:24px 20px 0;color:#7b8475;font-size:11px;line-height:1.8;">АРКА 123 — место для ваших идей.<br>Письмо отправлено на {{to_email}} по заявке с сайта.</td></tr>
+</table>
+</td></tr></table>
+</body></html>

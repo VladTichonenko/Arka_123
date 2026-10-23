@@ -1,0 +1,28 @@
+{
+  "service": "World Labs Marble",
+  "run_url": "https://marble.worldlabs.ai/create/bcea855f-5242-46ab-b2d3-2c432ebe69ff",
+  "run_id": "bcea855f-5242-46ab-b2d3-2c432ebe69ff",
+  "model": "Marble 1.1",
+  "input_mode": "multi-image",
+  "auto_layout": true,
+  "input_count": 4,
+  "visibility": "public",
+  "plan": "Free",
+  "public_generation_approved_by_user": true,
+  "paid_subscription_authorized": false,
+  "text_prompt_effective": false,
+  "text_prompt_note": "UI says: Text input will not be used for multi-image input.",
+  "presentation": "horizontal landscape viewer requested by user",
+  "status": "complete",
+  "accuracy_note": "Experimental AI reconstruction from photographs; not a measured scan.",
+  "world_id": "08539f16-b950-4329-9751-fd13aec7730c",
+  "world_url": "https://marble.worldlabs.ai/world/08539f16-b950-4329-9751-fd13aec7730c",
+  "navigation_verified": [
+    "mouse drag rotates camera",
+    "S key moves backward",
+    "return to origin button"
+  ],
+  "export_status": "Splats, Collider mesh and High-quality mesh disabled in Free plan download menu",
+  "screenshot": "work/3d-tour/marble-tour-landscape.png",
+  "website_integration": "not added"
+}

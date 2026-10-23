@@ -1,0 +1,19 @@
+{
+  "id": "gen-vid-1792697672-ghxWghHLhgHaoPx8cUTP",
+  "model": "kwaivgi/kling-v3.0-pro",
+  "status": "completed",
+  "duration_requested": 12,
+  "actual_duration": 12.041667,
+  "requested_resolution": "720p",
+  "delivered_dimensions": [
+    1916,
+    1080
+  ],
+  "generate_audio": false,
+  "cost_usd": 1.344,
+  "total_cost_usd": 1.344,
+  "budget_usd": 3,
+  "attempts": 1,
+  "output": "public/videos/arina-orbit-hd.mp4",
+  "original": "work/arina-scroll/arina-orbit-original.mp4"
+}

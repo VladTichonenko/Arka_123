@@ -1,0 +1,55 @@
+{
+  "purpose": "One experimental AI reconstruction of the real ARKA 123 rental room; not a measured scan.",
+  "photos": [
+    {
+      "path": "/Users/vtichonenko/Documents/ChatGPT/Тестовое задание арка 123/public/images/space/room-main.webp",
+      "file": "room-main.webp",
+      "pixels": [
+        1600,
+        900
+      ],
+      "sha256": "7f1e503a3ba24827977c47673f5231d9e53c715ad4103e5ca0642671c98931da",
+      "camera_pose": "unknown"
+    },
+    {
+      "path": "/Users/vtichonenko/Documents/ChatGPT/Тестовое задание арка 123/public/images/space/room-windows.webp",
+      "file": "room-windows.webp",
+      "pixels": [
+        941,
+        1672
+      ],
+      "sha256": "8389b25a81c62db9222b40f24f5d5e6de3bf937d91c6719e057b9a1d13e4ccf8",
+      "camera_pose": "unknown"
+    },
+    {
+      "path": "/Users/vtichonenko/Documents/ChatGPT/Тестовое задание арка 123/public/images/space/room-side.webp",
+      "file": "room-side.webp",
+      "pixels": [
+        941,
+        1672
+      ],
+      "sha256": "f1ffca9e6be8a004cf77db164e737506fca94307e56df142625f4a9de90fd949",
+      "camera_pose": "unknown"
+    },
+    {
+      "path": "/Users/vtichonenko/Documents/ChatGPT/Тестовое задание арка 123/public/images/space/room-kitchen.webp",
+      "file": "room-kitchen.webp",
+      "pixels": [
+        941,
+        1672
+      ],
+      "sha256": "2d0bce03abcd2fdd31153ffc37c186e59ebfe3f4f85cd1d6988fa7afdcb1759d",
+      "camera_pose": "unknown"
+    },
+    {
+      "path": "/Users/vtichonenko/Documents/ChatGPT/Тестовое задание арка 123/public/images/space/room-light.webp",
+      "file": "room-light.webp",
+      "pixels": [
+        941,
+        1672
+      ],
+      "sha256": "acb3fc63430bb3d178ca4abe84290734ab66a6b3dbf7f7d0cff66c48740c1271",
+      "camera_pose": "unknown"
+    }
+  ]
+}

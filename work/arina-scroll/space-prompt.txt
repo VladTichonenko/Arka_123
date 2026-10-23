@@ -1,0 +1,9 @@
+Use case: identity-preserve.
+Asset type: transparent foreground full-body human cutout for a cinematic scroll-controlled interior website scene.
+Input image: the supplied portrait is the mandatory identity reference for fictional Arina; preserve this exact recognizable face, facial proportions, gray-green eyes, dark-blond pinned hair, skin texture and warm subtle smile. Highest priority is exact same identity.
+Primary request: create ONE photorealistic full-body image of this same woman, age 30–35, in the same black fitted blazer, ivory blouse and same small polished silver brooch shaped like an arch with 123 inside. Add tailored straight black trousers and understated black shoes.
+Pose: confident warm hostess standing naturally, body turned three-quarter toward viewer left, her face turned toward viewer enough to remain clearly recognizable. One forearm gently extended, palm up toward the room on viewer left, other hand relaxed.
+Composition: portrait 2:3 canvas; entire head, hair, hands, both feet and both shoes fully within frame; generous empty safe margins all around. Natural realistic anatomy and five fingers.
+Lighting: soft bright daylight, polished commercial photography, realistic skin and fabric.
+Background: genuine alpha transparency, isolated person only, no backdrop, no furniture, no room, no floor, no cast shadow.
+Constraints: preserve exact identity and clothing details from the supplied image. No CGI, no 3D doll, no cartoon, no illustration, no plastic skin, no text other than the tiny brooch digits, no watermark.

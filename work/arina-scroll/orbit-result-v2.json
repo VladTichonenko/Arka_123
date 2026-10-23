@@ -1,0 +1,9 @@
+{
+  "id": "gen-vid-1792698786-7KoMzaCZKDvDenoLiVLx",
+  "model": "google/veo-3.1",
+  "status": "completed",
+  "cost": 1.6,
+  "prior_cost": 1.344,
+  "total_cost": 2.944,
+  "budget": 3
+}

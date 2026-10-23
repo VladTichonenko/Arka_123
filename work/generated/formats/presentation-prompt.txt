@@ -1,0 +1,9 @@
+Use case: stylized-concept
+Asset type: square illustration for the Presentation format card on the ARKA 123 event-space website.
+Primary request: one high-quality 3D studio clay/plastic illustration: a sculptural terracotta-orange miniature podium with a charcoal rounded desktop microphone, an ivory presentation screen behind bearing only an abstract large circular shape, a small warm mustard sphere, tiny ivory steps, and a cream architectural arch subtly behind the group.
+Style/medium: premium friendly product 3D illustration similar to the rounded tactile matte ceramic and satin plastic imagery in Yandex Go service cards; simple polished sculptural forms.
+Scene/backdrop: plain seamless very light warm gray #f3f3ef studio floor and background.
+Composition/framing: square 1024x1024 output, single coherent object group centered in the middle 75%, ample clean margins on all sides, eye-level three-quarter front view. Will be displayed in a web slot about 320x235 CSS pixels, ensure all important objects fit comfortably within the central area.
+Lighting/mood: delicate upper-left studio softbox lighting, warm calm premium mood, soft ambient contact shadows.
+Color palette: warm gray, ivory, terracotta orange, charcoal, one warm mustard accent.
+Constraints: no text, numbers, logos, people, UI, card border/frame, collage, watermarks. No readable content on the screen, only an abstract circular shape. The reference screenshot is a style reference only; do not recreate its layout or graphics.

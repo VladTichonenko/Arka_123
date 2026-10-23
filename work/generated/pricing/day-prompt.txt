@@ -1,0 +1,9 @@
+Use case: stylized-concept
+Asset type: square 3D illustration for a whole-day event-rental pricing card on ARKA 123 website.
+Primary request: one cohesive premium sculptural still-life featuring a beautiful chunky cream architectural arch, an ivory miniature event podium with a small charcoal microphone, a lime-yellow sun disk subtly behind the arch, and one small cream sphere beside the podium.
+Style/medium: rounded friendly high-quality 3D product illustration in tactile porcelain and satin plastic; refined simple large shapes, subtly rounded edges, elegant playful product aesthetic. Match the reference screenshot only for the clean sculptural rounded 3D style and black backdrop; do not copy its UI or subjects.
+Scene/backdrop: pure seamless pitch BLACK #000000 background and floor, no visible horizon, all four outer edges absolutely solid black.
+Composition/framing: square output, front three-quarter eye-level view. Center a single group within the central 70% of the canvas width, leave minimum 15% empty black at top and 20% empty black below the group; plenty of margins. Must remain legible in a 380x200 web slot with contain fitting.
+Lighting/mood: soft studio highlights on cream forms, elegant subtle rim light for clean contours, small gentle local contact shadow, background remains pure black.
+Color palette: ivory cream, charcoal black and one subtle lime-yellow #e4f16a sun disk.
+Constraints: no people, text, letters, digits, logos, UI, card frame, collage or watermark. No bright gray background, no floor gradient reaching the edges, no extra objects.

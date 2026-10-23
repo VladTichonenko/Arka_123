@@ -1,0 +1,8 @@
+Use case: stylized-concept.
+Asset type: square premium 3D editorial illustration for ARKA 123 intimate gathering format card.
+Primary request: a small inviting social lounge vignette. Two sculptural softly rounded lounge chairs, one muted sage and one terracotta, surround a cream low round table with two simple cups. A warm ochre dome lamp casts subtle warm light; cream curved architectural arch stands behind. A small sculptural flower in an ivory vase adds a tasteful final accent.
+Input images: the visible seminar.png and workshop.png are style references only, not edit targets. Match their tactile premium 3D clay/ceramic and satin plastic materials, ivory architecture, warm neutral palette, polished friendly miniature product art and studio rendering.
+Backdrop: plain seamless very light warm gray #f3f3ef.
+Composition: square, eye-level three-quarter front view, centralized cohesive group within middle 75 percent with ample clean margins, balanced layered shapes and clear silhouettes; miniature scene isolated in studio, not a full realistic room.
+Lighting: soft upper-left studio light with gentle ambient contact shadows and subtle warm lamp glow.
+Constraints: no people, text, letters, logos, numbers, UI, card frame, collage or watermark.

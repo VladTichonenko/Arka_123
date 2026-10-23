@@ -1,0 +1,49 @@
+{
+  "pageHeight": 12529,
+  "sections": [
+    {
+      "class": "intro-hero",
+      "height": 920
+    },
+    {
+      "class": "intro-about",
+      "height": 912
+    },
+    {
+      "class": "space-section",
+      "height": 1032
+    },
+    {
+      "class": "showcase-scroll",
+      "height": 2880
+    },
+    {
+      "class": "gallery-section",
+      "height": 1428
+    },
+    {
+      "class": "services-section",
+      "height": 1717
+    },
+    {
+      "class": "character-section",
+      "height": 771
+    },
+    {
+      "class": "reviews-section",
+      "height": 1009
+    },
+    {
+      "class": "location-strip",
+      "height": 119
+    },
+    {
+      "class": "contact-section",
+      "height": 916
+    }
+  ],
+  "viewport": [
+    1440,
+    900
+  ]
+}

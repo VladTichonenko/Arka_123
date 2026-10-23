@@ -1,0 +1,50 @@
+.guest-reviews { padding: var(--section-space) 0; background: #fff; color: #18251e; scroll-margin-top: 78px; }
+.guest-reviews__heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: clamp(28px, 3vw, 48px); }
+.guest-reviews__heading h2 { margin: 16px 0 0; font-size: clamp(34px, 3.8vw, 64px); font-weight: 650; letter-spacing: -.065em; line-height: 1.06; }
+.guest-reviews__heading h2 > span { color: #7e8981; }
+.guest-reviews__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(16px, 1.5vw, 28px); }
+.guest-reviews__grid:focus-visible { outline: 3px solid #7b8b44; outline-offset: 4px; border-radius: 24px; }
+.guest-reviews__controls { display: none; }
+.guest-review { display: flex; min-width: 0; min-height: clamp(360px, 28vw, 510px); flex-direction: column; margin: 0; padding: clamp(24px, 2.5vw, 52px); border-radius: 28px; background: #f4f5ef; }
+.guest-review--lime { background: #e6f17e; }
+.guest-review__top { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.guest-review__top > svg { color: #8a9584; }
+.guest-review--lime .guest-review__top > svg { color: #72803c; }
+.guest-review__stars { display: flex; gap: 4px; }
+.guest-review blockquote { margin: 30px 0 36px; }
+.guest-review blockquote p { margin: 0; font-size: clamp(19px, 1.6vw, 30px); font-weight: 500; line-height: 1.4; letter-spacing: -.04em; }
+.guest-review figcaption { display: flex; align-items: center; gap: 13px; margin-top: auto; padding-top: 22px; border-top: 1px solid #18251e20; }
+.guest-review__avatar { display: grid; width: 46px; height: 46px; flex: 0 0 46px; place-items: center; border-radius: 50%; background: #fff; color: #52614b; }
+.guest-review figcaption > div { display: flex; min-width: 0; flex-direction: column; gap: 6px; }
+.guest-review figcaption strong { font-size: clamp(14px, 1vw, 18px); font-weight: 700; }
+.guest-review figcaption div > span { color: #65715c; font-size: clamp(11px, .8vw, 14px); line-height: 1.4; }
+.guest-reviews__bottom { display: flex; align-items: center; justify-content: flex-end; gap: 24px; margin-top: 26px; }
+.guest-reviews__bottom a { display: inline-flex; min-height: 46px; align-items: center; gap: 20px; color: #18251e; font-size: 14px; font-weight: 700; text-decoration: none; }
+.guest-reviews__bottom a > span { display: grid; width: 42px; height: 42px; flex: 0 0 42px; place-items: center; border-radius: 50%; background: #e6f17e; transition: background-color 180ms ease; }
+.guest-reviews__bottom a:hover > span { background: #d4e364; }
+.guest-reviews__bottom a:focus-visible { outline: 3px solid #7b8b44; outline-offset: 5px; border-radius: 8px; }
+@media (min-width: 761px) and (max-width: 1100px) {
+  .guest-review { padding: 24px; }
+  .guest-review blockquote p { font-size: 18px; }
+  .guest-review__top { gap: 8px; }
+  .guest-review__stars { gap: 2px; }
+  .guest-review__stars svg { width: 16px; }
+}
+@media (max-width: 760px) {
+  .guest-reviews { padding: 56px 0; }
+  .guest-reviews__heading { align-items: flex-start; flex-direction: column; gap: 20px; }
+  .guest-reviews__heading h2 { font-size: clamp(32px, 7.8vw, 48px); }
+  .guest-reviews__grid { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: calc(100% - 34px); align-items: stretch; gap: 14px; overflow-x: auto; overscroll-behavior-inline: contain; scroll-snap-type: x mandatory; scrollbar-width: none; }
+  .guest-reviews__grid::-webkit-scrollbar { display: none; }
+  .guest-review { min-height: 340px; padding: 28px; border-radius: 24px; scroll-snap-align: start; }
+  .guest-review blockquote { margin: 24px 0 30px; }
+  .guest-review blockquote p { font-size: clamp(20px, 4vw, 26px); }
+  .guest-reviews__controls { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 18px; }
+  .guest-reviews__controls > span { color: #65715c; font-size: 13px; font-variant-numeric: tabular-nums; }
+  .guest-reviews__controls > div { display: flex; gap: 10px; }
+  .guest-reviews__controls button { display: grid; width: 44px; height: 44px; place-items: center; padding: 0; border: 1px solid #e0e5da; border-radius: 50%; background: #f4f5ef; color: #18251e; cursor: pointer; }
+  .guest-reviews__controls button:hover:not(:disabled) { background: #e6f17e; }
+  .guest-reviews__controls button:disabled { opacity: .35; cursor: default; }
+  .guest-reviews__controls button:focus-visible { outline: 3px solid #7b8b44; outline-offset: 3px; }
+  .guest-reviews__bottom { align-items: flex-start; flex-direction: column; gap: 18px; }
+}

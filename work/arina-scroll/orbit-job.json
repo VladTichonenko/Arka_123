@@ -1,0 +1,9 @@
+{
+  "id": "gen-vid-1792697672-ghxWghHLhgHaoPx8cUTP",
+  "model": "kwaivgi/kling-v3.0-pro",
+  "duration": 12,
+  "resolution": "720p",
+  "generate_audio": false,
+  "estimated_cost": 1.344,
+  "budget": 3
+}

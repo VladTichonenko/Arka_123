@@ -1,0 +1,10 @@
+{
+  "id": "gen-vid-1792698786-7KoMzaCZKDvDenoLiVLx",
+  "model": "google/veo-3.1",
+  "duration": 8,
+  "resolution": "1080p",
+  "generate_audio": false,
+  "estimated_cost": 1.6,
+  "prior_spend": 1.344,
+  "total_budget": 3
+}

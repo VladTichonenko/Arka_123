@@ -1,0 +1,18 @@
+{
+  "currency": "USD",
+  "budget": 3,
+  "generations": [
+    {
+      "id": "gen-vid-1792697672-ghxWghHLhgHaoPx8cUTP",
+      "model": "kwaivgi/kling-v3.0-pro",
+      "cost": 1.344
+    },
+    {
+      "id": "gen-vid-1792698786-7KoMzaCZKDvDenoLiVLx",
+      "model": "google/veo-3.1",
+      "cost": 1.6
+    }
+  ],
+  "total": 2.944,
+  "remaining": 0.05599999999999983
+}

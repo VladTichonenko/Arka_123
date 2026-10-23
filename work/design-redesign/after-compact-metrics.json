@@ -1,0 +1,14 @@
+{
+  "carouselControlsFit": true,
+  "centerImageGap": 29,
+  "h1Size": "73.44px",
+  "heroHeight": 740,
+  "overflowingText": [],
+  "pageHeight": 9445,
+  "pageWidth": 1440,
+  "shellWidth": 1440,
+  "viewport": [
+    1440,
+    900
+  ]
+}

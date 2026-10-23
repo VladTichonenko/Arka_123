@@ -1,0 +1,10 @@
+Use case: stylized-concept.
+Asset type: square premium 3D product illustration for a website half-day space rental pricing card, intended display 380 x 200 with contain.
+Input images: the visible reference is style guidance only. Adopt its elegant rounded sculptural product art against deep black, not its UI, typography or composition.
+Primary request: a standing sculptural cream flip calendar with a completely plain blank page and two smooth charcoal binder rings at top. A lime-yellow circular sun disk peeks from behind, and a small ivory architectural arch stands at rear. One cohesive charming miniature product group.
+Style/medium: high-end studio 3D, porcelain and satin plastic, rounded chunky forms, beautiful restrained highlights and tiny tactile material details.
+Backdrop: pure solid BLACK #000000 seamless background. Background must stay uniform pure black edge to edge, no gradient, haze, gray floor, colored plane or vignette. Gentle shadows remain within the isolated object group.
+Palette: warm cream, charcoal black and subtle lime #e4f16a.
+Composition: square image, front three-quarter view, centered cohesive group occupying middle 70 percent, bottom clear black margin about20 percent and top margin15 percent; all objects fully visible.
+Lighting: polished studio softbox highlights, readable surfaces, soft shadows, premium friendly product illustration.
+Constraints: no UI, card frame, text, letters, digits, typography, logos, people or watermark. Calendar page absolutely blank.
