@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { ArrowDown, ArrowUpRight, MouseSimple } from '@phosphor-icons/react'
+import { createScrollVideo } from '../shared/lib/scroll-video'
+import type { ScrollVideoStatus } from '../shared/lib/scroll-video'
 import './arina-scroll-story.css'
 
 const ORBIT_VIDEO = import.meta.env.VITE_ARINA_ORBIT_VIDEO_URL?.trim() || '/videos/arina-orbit-wide.mp4'
@@ -17,14 +19,22 @@ export function ArinaScrollStory() {
   const stageRef = useRef<HTMLDivElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
   const progressRef = useRef(0)
+  const scrubberRef = useRef<ReturnType<typeof createScrollVideo> | null>(null)
   const [active, setActive] = useState(0)
   const [loadVideo, setLoadVideo] = useState(false)
-  const [ready, setReady] = useState(false)
-  const [failed, setFailed] = useState(false)
+  const [videoStatus, setVideoStatus] = useState<ScrollVideoStatus>('loading')
   const [reduced, setReduced] = useState(false)
   const [shortViewport, setShortViewport] = useState(false)
   const [inView, setInView] = useState(false)
-  const canAnimate = Boolean(ORBIT_VIDEO) && !failed && !reduced && !shortViewport
+  const canAnimate = Boolean(ORBIT_VIDEO) && !reduced && !shortViewport
+
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video || !canAnimate || !loadVideo) return
+    const scrubber = createScrollVideo(video, () => progressRef.current, setVideoStatus)
+    scrubberRef.current = scrubber
+    return () => { scrubber.destroy(); scrubberRef.current = null }
+  }, [canAnimate, loadVideo])
 
   useEffect(() => {
     const stage = stageRef.current
@@ -57,16 +67,10 @@ export function ArinaScrollStory() {
   useEffect(() => {
     const section = sectionRef.current
     const stage = stageRef.current
-    const video = videoRef.current
     if (!section || !stage) return
     let frame = 0
     let visible = false
 
-    const seek = () => {
-      if (!canAnimate || !video || video.readyState < 2 || video.seeking || !Number.isFinite(video.duration)) return
-      const time = progressRef.current * Math.max(0, video.duration - .05)
-      if (Math.abs(video.currentTime - time) > .025) video.currentTime = time
-    }
     const update = () => {
       frame = 0
       if (!canAnimate) {
@@ -79,7 +83,7 @@ export function ArinaScrollStory() {
       setActive(Math.min(2, Math.floor(progress * 3)))
       stage.style.setProperty('--orbit-progress', String(progress))
       stage.style.setProperty('--orbit-title-opacity', String(clamp(1 - progress / .18)))
-      seek()
+      scrubberRef.current?.sync()
     }
     const schedule = () => { if (!frame) frame = requestAnimationFrame(update) }
     const scroll = () => { if (visible) schedule() }
@@ -87,18 +91,18 @@ export function ArinaScrollStory() {
     observer.observe(section)
     const resize = new ResizeObserver(schedule)
     resize.observe(stage)
-    video?.addEventListener('seeked', seek)
-    video?.addEventListener('loadeddata', schedule)
     window.addEventListener('scroll', scroll, { passive: true })
     window.addEventListener('resize', schedule)
+    window.addEventListener('pageshow', schedule)
+    document.addEventListener('visibilitychange', schedule)
     update()
     return () => {
       observer.disconnect()
       resize.disconnect()
-      video?.removeEventListener('seeked', seek)
-      video?.removeEventListener('loadeddata', schedule)
       window.removeEventListener('scroll', scroll)
       window.removeEventListener('resize', schedule)
+      window.removeEventListener('pageshow', schedule)
+      document.removeEventListener('visibilitychange', schedule)
       cancelAnimationFrame(frame)
     }
   }, [canAnimate, loadVideo])
@@ -119,7 +123,12 @@ export function ArinaScrollStory() {
     <section className={`arina-orbit ${canAnimate ? 'arina-orbit--animated' : ''} ${inView ? 'arina-orbit--in-view' : ''}`} id="arina-story" ref={sectionRef} aria-labelledby="arina-orbit-title">
       <div className="arina-orbit__stage" ref={stageRef}>
         <img className="arina-orbit__poster" src={POSTER} alt="Арина в чёрном жакете с брошью 123 стоит в центре светлого зала АРКА 123" width={1672} height={941} loading="lazy" />
-        {canAnimate && <video className={`arina-orbit__video ${ready ? 'is-ready' : ''}`} ref={videoRef} src={loadVideo ? ORBIT_VIDEO : undefined} poster={POSTER} muted playsInline preload="auto" disablePictureInPicture aria-hidden="true" onLoadedData={() => setReady(true)} onError={() => { setReady(false); setFailed(true) }} />}
+        {canAnimate && <video className={`arina-orbit__video ${videoStatus === 'ready' || videoStatus === 'stalled' ? 'is-ready' : ''}`} ref={videoRef} src={loadVideo ? ORBIT_VIDEO : undefined} poster={POSTER} muted playsInline preload="auto" disablePictureInPicture aria-hidden="true" />}
+
+        {canAnimate && loadVideo && videoStatus !== 'ready' && <div className="arina-orbit__video-status">
+          <span role="status">{videoStatus === 'error' ? 'Не удалось загрузить анимацию.' : videoStatus === 'stalled' ? 'Анимация загружается дольше обычного.' : 'Загружаем анимацию…'}</span>
+          {(videoStatus === 'stalled' || videoStatus === 'error') && <button type="button" onClick={() => scrubberRef.current?.retry()}>Повторить загрузку</button>}
+        </div>}
 
         <div className="arina-orbit__top"><span>АРКА 123 <span>/</span> ОСМОТР ПРОСТРАНСТВА</span><a href="#experience">К планированию встречи <ArrowDown size={15} aria-hidden="true" /></a></div>
 

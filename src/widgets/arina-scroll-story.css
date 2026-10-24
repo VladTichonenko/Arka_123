@@ -5,6 +5,8 @@
 .arina-orbit__poster, .arina-orbit__video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
 .arina-orbit__video { opacity: 0; }
 .arina-orbit__video.is-ready { opacity: 1; }
+.arina-orbit__video-status { position: absolute; z-index: 1; top: 85px; right: var(--page-gutter); display: flex; max-width: min(310px, calc(100% - 36px)); align-items: center; flex-wrap: wrap; gap: 8px; padding: 10px 14px; border-radius: 16px; background: #fbfaf3eb; color: #3c453b; font-size: 11px; line-height: 1.5; }
+.arina-orbit__video-status button { min-height: 36px; border: 0; border-radius: 999px; padding: 8px 12px; background: var(--button-bg); color: var(--button-text); cursor: pointer; }
 .arina-orbit__top { position: absolute; inset: 28px var(--page-gutter) auto; display: flex; align-items: center; justify-content: space-between; gap: 22px; }
 .arina-orbit__top > span { color: #2b352d; padding: 10px 14px; background: #fbfaf2dc; border: 1px solid #ffffff80; backdrop-filter: blur(16px); border-radius: 30px; font-size: 9px; font-weight: 750; letter-spacing: .08em; }
 .arina-orbit__top > span > span { margin-inline: 9px; color: #8b9385; }
